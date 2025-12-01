@@ -716,7 +716,7 @@ color: "#0f172a",
                       borderRadius: 4,
                       border: "1px solid rgba(148,163,184,0.7)",
                       background:
-                        "linear-gradient(135deg, #020617, #111827)",
+                        "linear-gradient(135deg, #6680f4ff, #c4d1edff)",
                       boxShadow: "0 24px 70px rgba(15,23,42,0.7)",
                       color: "rgba(249,250,251,0.98)",
                     }}
@@ -1143,6 +1143,7 @@ color: "#0f172a",
   );
 
 }
+
 
 
 
