@@ -1,0 +1,68 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+  min-height: 100%;
+  color: #0f172a; /* slate-900 */
+  background: radial-gradient(circle at top left, #e0f2fe 0, #eff6ff 30%, #f9fafb 70%);
+}
+
+/* soft ambient wash instead of heavy photo */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background:
+    radial-gradient(circle at top left, rgba(14, 37, 238, 0.916), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(244, 114, 182, 0.16), transparent 55%);
+  opacity: 1;
+  pointer-events: none;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* cute slim scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #6366f1, #ec4899);
+  border-radius: 999px;
+}
+
+/* legacy .tab-btn (if used anywhere) – make it match pills */
+.tab-btn {
+  background: rgba(15, 23, 42, 0.92);
+  padding: 8px 18px;
+  border-radius: 999px;
+  border: 1px solid rgba(15, 23, 42, 0.95);
+  font-size: 0.85rem;
+  color: #f9fafb;
+  transition: 0.18s ease-out;
+}
+
+.tab-btn:hover {
+  background: #111827;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 25px rgba(15, 23, 42, 0.35);
+}
