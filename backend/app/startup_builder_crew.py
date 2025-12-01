@@ -1,5 +1,3 @@
-# TEMP SIMPLE VERSION (no CrewAI) JUST TO GET BACKEND RUNNING
-
 from typing import Dict
 
 def run_startup_crew(idea: str) -> Dict[str, str]:
