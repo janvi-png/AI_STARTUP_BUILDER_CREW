@@ -263,19 +263,18 @@ export default function HomePage() {
   >
 
    <Container
-  maxWidth="xl"   // ⭐ FULL WIDTH FIX
+  maxWidth="lg"   
   disableGutters
   sx={{
     position: "relative",
     zIndex: 1,
     my: { xs: 2, md: 4 },
-    px: { xs: 4, md: 8 },     // ⭐ MORE LEFT/RIGHT SPACE
-    py: { xs: 4, md: 6 },     // ⭐ MORE TOP/BOTTOM SPACE
+    px: { xs: 4, md: 8 },     
+    py: { xs: 4, md: 6 },     
 
-    // ⭐ FULL WIDTH TRANSLUCENT CARD
     width: "100%",
     background: "rgba(255,255,255,0.82)",
-    backdropFilter: "blur(18px)",
+    backdropFilter: "blur(25px)",
     borderRadius: 6,
     border: "1px solid rgba(255,255,255,0.45)",
     boxShadow: "0 40px 80px rgba(0,0,0,0.22)",
@@ -1144,5 +1143,6 @@ color: "#0f172a",
   );
 
 }
+
 
 
