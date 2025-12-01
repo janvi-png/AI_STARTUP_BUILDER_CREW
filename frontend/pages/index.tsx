@@ -49,7 +49,7 @@ type SavedPlan = {
 };
 
 const API_BASE =
-  process.env.NEXT_PUBLIC_API_BACKEND_URL;
+  process.env.NEXT_PUBLIC_API_URL;
 
 const shortLabel = (idea: string, idx: number) => {
   const clean = idea.trim().replace(/\s+/g, " ");
@@ -1144,4 +1144,5 @@ color: "#0f172a",
   );
 
 }
+
 
